@@ -1,5 +1,5 @@
 function modal() {
-    // Modal
+    
 
     const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelector('.modal');
@@ -34,7 +34,7 @@ function modal() {
     });
 
     const modalTimerId = setTimeout(openModal, 300000);
-    // Изменил значение, чтобы не отвлекало
+    
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -45,4 +45,4 @@ function modal() {
     window.addEventListener('scroll', showModalByScroll);
 }
 
-module.exports = modal;
+export default   modal;
