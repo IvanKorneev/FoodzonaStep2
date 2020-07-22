@@ -1,8 +1,6 @@
 function calc() {
-    
-
     const result = document.querySelector('.calculating__result span');
-    
+
     let sex, height, weight, age, ratio;
 
     if (localStorage.getItem('sex')) {
@@ -62,13 +60,13 @@ function calc() {
                     sex = e.target.getAttribute('id');
                     localStorage.setItem('sex', e.target.getAttribute('id'));
                 }
-    
+
                 elements.forEach(elem => {
                     elem.classList.remove(activeClass);
                 });
-    
+
                 e.target.classList.add(activeClass);
-    
+
                 calcTotal();
             });
         });
@@ -86,7 +84,7 @@ function calc() {
             } else {
                 input.style.border = 'none';
             }
-            switch(input.getAttribute('id')) {
+            switch (input.getAttribute('id')) {
                 case "height":
                     height = +input.value;
                     break;
@@ -108,4 +106,4 @@ function calc() {
 
 }
 
-export default  calc;
+export default calc;

@@ -11,5 +11,8 @@
   "devDependencies": {
     "json-server": "^0.16.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "webpack": "^4.43.0"
   }
 }
